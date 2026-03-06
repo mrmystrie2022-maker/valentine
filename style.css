@@ -95,3 +95,18 @@ button {
 .memory-pic:nth-child(2) { animation-delay: 4.2s; } 
 .memory-pic:nth-child(3) { animation-delay: 6.0s; } 
 .memory-pic:nth-child(4) { animation-delay: 8.5s; }
+
+.hidden-message {
+    opacity: 0;
+    color: #d81b60;
+    font-size: 26px;
+    margin-top: 40px;
+    transform: scale(0.8);
+    transition: all 1.2s ease-out; /* Creates the smooth fade and grow effect */
+}
+
+.show-message {
+    opacity: 1;
+    transform: scale(1);
+}
+
