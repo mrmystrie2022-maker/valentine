@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yay!</title>
+    <title>She said YES!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="proposal-bgm" autoplay loop>
+        <source src="bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="container">
-        <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Bears Kissing">
-        <h1>Knew you would say yes! 🎉</h1>
-        <p>You just made me the happiest person!</p>
+        <h1>I love you, Nithya! ❤️</h1>
+        <p>Here is to a lifetime of us.</p>
+        
+        <div class="photo-gallery">
+            <img src="pic1.jpg" alt="Us 1" class="memory-pic">
+            <img src="pic2.jpg" alt="Us 2" class="memory-pic">
+            <img src="pic3.jpg" alt="Us 3" class="memory-pic">
+            <img src="pic4.jpg" alt="Us 4" class="memory-pic">
+        </div>
     </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("proposal-bgm").play();
+        }
+    </script>
 </body>
 </html>
