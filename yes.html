@@ -26,11 +26,20 @@
 
     <h2 id="final-message" class="hidden-message">I can't wait to spend forever with you! ❤️</h2>
 
-    <script>
+   <script>
         window.onload = function() {
+            // 1. Play the background music automatically
             document.getElementById("proposal-bgm").play();
+            
+            // 2. The countdown for the final message
+            // Calculate this based on your last photo. 
+            // If your last photo animation starts at 8.5s, wait until around 10.5 seconds to show the text.
+            // 10.5 seconds = 10500 milliseconds.
+            
+            setTimeout(() => {
+                document.getElementById("final-message").classList.add("show-message");
+            }, 10500); 
         }
     </script>
-</body>
-</html>
+
 
